@@ -13,6 +13,7 @@
     padding-left: 5%;
     -webkit-box-align: center;
     align-items: center;
+    z-index: 100;
 }
 .container{
     display: flex;

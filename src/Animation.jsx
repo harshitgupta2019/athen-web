@@ -1,6 +1,11 @@
 import React from 'react'
 import './Animation.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Animation = () => {
+    const url1="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-transcode.mp4";
+    const url2="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-transcode.webm";
+    const url3="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options%20(3)-transcode.mp4"
   return (
     <div className="section-layout349">
         <div className="page-padding-5">
@@ -66,55 +71,31 @@ const Animation = () => {
                         </div>
                     </div>
                     <div className="layout349_desktop-image-wrapper">
-                        <div data-poster-url="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-poster-00001.jpg"
+                        <div id="data-1" data-poster-url="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-poster-00001.jpg"
                             data-video-urls="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-transcode.mp4,https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-transcode.webm"
                             data-autoplay="true" data-loop="true" data-wf-ignore="true"
-                            className="layout349_image is-image1 w-background-video w-background-video-atom">
-                                <video
-                                id="4d8255fa-4528-4a35-9f74-762cf104af37-video" autoplay loop
-                                // style={{backgroundImage:'url('https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-poster-00001.jpg')'}}
-                                muted playsinline data-wf-ignore="true" data-object-fit="cover">
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-transcode.mp4"
-                                    data-wf-ignore="true"/>
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/6341303c29c5340961dc9ae6_Mco-1-transcode.webm"
-                                    data-wf-ignore="true"/>
-                                </video>
+                            className="layout349_image is-image1 w-background-video w-background-video-atom"  >
+                                <video src={url1} autoPlay loop muted playsinline controls data-wf-ignore="true" data-object-fit="cover" ></video>
                         </div>
                         <div data-poster-url="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-poster-00001.jpg"
                             data-video-urls="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-transcode.mp4,https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-transcode.webm"
                             data-autoplay="true" data-loop="true" data-wf-ignore="true"
                             data-w-id="9c3e4ce8-6646-602f-ce80-a92be7ce45d5"
-                            className="layout349_image is-image2 w-background-video w-background-video-atom" style={{opacity:0}}>
-                                <video id="9c3e4ce8-6646-602f-ce80-a92be7ce45d5-video" autoplay loop
-                                // style="background-image:url(&quot;https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-poster-00001.jpg&quot;)"
-                                muted playsinline data-wf-ignore="true" data-object-fit="cover">
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-transcode.mp4"
-                                    data-wf-ignore="true"/>
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63413ff244f1dc616b7148a0_Mco-transcode.webm"
-                                    data-wf-ignore="true"/>
-                            </video>
+                            className="layout349_image is-image2 w-background-video w-background-video-atom" data-aos="fade-up"
+                              >
+                                <video src={url2} autoPlay loop muted playsinline controls data-wf-ignore="true" data-object-fit="cover" ></video>
+
                         </div>
                         <div data-poster-url="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-poster-00001.jpg"
                             data-video-urls="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-transcode.mp4,https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-transcode.webm"
                             data-autoplay="true" data-loop="true" data-wf-ignore="true"
                             data-w-id="065e88bd-eb76-8c8e-9cbd-c716a1d288e9"
-                            className="layout349_image is-image3 w-background-video w-background-video-atom" style={{opacity:0}}>
-                                <video id="065e88bd-eb76-8c8e-9cbd-c716a1d288e9-video" autoplay loop
-                                // style="background-image:url(&quot;https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-poster-00001.jpg&quot;)"
-                                muted playsinline data-wf-ignore="true" data-object-fit="cover">
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-transcode.mp4"
-                                    data-wf-ignore="true"/>
-                                <source
-                                    src="https://global-uploads.webflow.com/62efc7cb58ad153bfb146988/63455a67996ba248148c4e31_add-options (3)-transcode.webm"
-                                    data-wf-ignore="true"/>
-                            </video>
+                            className="layout349_image is-image3 w-background-video w-background-video-atom" >
+                            <video src={url3} autoPlay loop muted playsinline controls data-wf-ignore="true" data-object-fit="cover" ></video>
+
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
